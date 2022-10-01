@@ -1,5 +1,8 @@
+import time
+
 
 def main():
+
     file = open("PRNG", "r")
     num = file.read()
 
@@ -7,10 +10,8 @@ def main():
 
     if newNum > 10:
         picNum = newNum % 10
-
+    
     print(picNum)
     picNum = newNum
-
-
     
 main()
