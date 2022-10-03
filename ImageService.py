@@ -1,4 +1,3 @@
-from asyncore import write
 import time
 
 
@@ -25,9 +24,9 @@ def main():
 
     file.close()
 
-    secondfile = open("FinalPath", "w")
+    secondfile = open("ImageService", "w")
     secondfile.truncate(0)
-    secondfile.write(f"./flowers/{picNum}.jpg")
+    secondfile.write(f"flowers/{picNum}.jpg")
 
 
     

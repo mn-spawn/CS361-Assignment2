@@ -1,6 +1,7 @@
 import time
 from PIL import Image
 
+
 def main():
     user = input("For new picure press 1 press any other key to cancel: ")
 
@@ -13,12 +14,10 @@ def main():
     else: 
         print("canceled")
 
+    time.sleep(15)
 
-    time.sleep(110)
-    file = open("PRNG", "r")
+    file = open("ImageService", "r")
     path = file.read()
-    print("hello") 
-    #Image.show(path)
-
+    print(path)
 
 main()

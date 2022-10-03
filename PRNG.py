@@ -1,4 +1,3 @@
-from asyncore import write
 import random
 import time
 
@@ -17,6 +16,10 @@ def main():
         writefile = open("PRNG", "w")
         writefile.truncate(0)
         writefile.write(numtoString) 
+
+        writefile = open("ImageService", "w")
+        writefile.truncate(0)
+        writefile.write(numtoString)
             
    
 main()
